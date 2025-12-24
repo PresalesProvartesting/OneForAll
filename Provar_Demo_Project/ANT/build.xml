@@ -24,7 +24,7 @@
 				webBrowserConfiguration="Full Screen"
 				webBrowserProviderName="Desktop"
 				webBrowserDeviceName="Full Screen" 
-				excludeCallableTestCases="true" 
+				excludeCallableTestCases="false" 
 				salesforceMetadataCache="Reuse" 
 				projectCachePath="../../.provarCaches"
 				testOutputlevel="BASIC" 

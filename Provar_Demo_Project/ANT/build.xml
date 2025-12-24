@@ -36,7 +36,8 @@
 				sendEmail="NO"
 				invokeTestRunMonitor="true"
 
-				licensePath="${licensePath}/data/License"
+				licensePath="${licensePath}
+
 				>
 		
 			 <fileset id="testcases" dir="../tests"></fileset>

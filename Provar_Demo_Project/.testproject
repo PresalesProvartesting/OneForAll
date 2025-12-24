@@ -13,12 +13,37 @@
       <connections>
         <connection id="3830638e-35c0-4c58-a90c-093c049607fb" name="Spanish_org">
           <connectionUrls>
-            <connectionUrl secureStorageNodeId="7074eae6-ec43-455a-93ee-932d6cc02874" url="sf:environment=PROD_DEV;apiLoginUrl=https://d20000000m8sbeai.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D20000000m8SbEAI/00520000006jwLdAAI;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=C:\\Users\\ashish.kushwaha\\Downloads\\00D20000000m8Sb.jks;jwtUsername=language2@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=ProvarJWT;jwtCertType=JKS"/>
+            <connectionUrl secureStorageNodeId="7074eae6-ec43-455a-93ee-932d6cc02874" url="sf:environment=PROD_DEV;apiLoginUrl=https://d20000000m8sbeai.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D20000000m8SbEAI/00520000006jwLdAAI;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/Certificate/Spanish_org_Certificate/00D20000000m8Sb.jks;jwtUsername=language2@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=ProvarJWT;jwtCertType=JKS"/>
           </connectionUrls>
         </connection>
         <connection id="4ec97b0b-0b1d-4310-9672-e28cab4b5837" name="CPQ_org">
           <connectionUrls>
-            <connectionUrl secureStorageNodeId="abd4e774-d3ad-45d7-8416-ebb45b65704d" url="sf:environment=PROD_DEV;apiLoginUrl=https://d0o000000te0ruau.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D0O000000tE0RUAU/0050O000005auzzQAA;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=C:\\Users\\ashish.kushwaha\\Downloads\\00D0O000000tE0R.jks;jwtUsername=cpq@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=CPQ_JWT_App;jwtCertType=JKS"/>
+            <connectionUrl secureStorageNodeId="abd4e774-d3ad-45d7-8416-ebb45b65704d" url="sf:environment=PROD_DEV;apiLoginUrl=https://d0o000000te0ruau.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D0O000000tE0RUAU/0050O000005auzzQAA;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/Certificate/CPQ_Certificate/00D0O000000tE0R.jks;jwtUsername=cpq@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=CPQ_JWT_App;jwtCertType=JKS"/>
+          </connectionUrls>
+        </connection>
+        <connection id="d6488777-c649-4f8c-b810-d5dd51d4a371" name="SDO">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="6458bb50-4bb3-4151-a36e-1e1e641688c5" url="sf:environment=PROD_DEV;apiLoginUrl=https://pr1752858432091.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00DKY00000DQfyj2AD/005KY000001tkmhYAA;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/Certificate/SDO_Certificate/00DKY00000DQfyj.jks;jwtUsername=aastha.jain@provartesting.com.provardemo;jwtPassword={jwtPassword};jwtCertAlias=ProvarJWT;jwtCertType=JKS"/>
+          </connectionUrls>
+        </connection>
+        <connection id="1620a13e-f176-421f-9b1c-79635ea3dc0a" name="SDO_Partner_Central">
+          <connectionUrls>
+            <connectionUrl url="sf:userType=COMMUNITIES;user=adam.mercer@provartesting.com.provardemo;environment=PROD_DEV;logonAsConnection=SDO;logonAsConnectionId=d6488777-c649-4f8c-b810-d5dd51d4a371;portal=SDO - Partner Central;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+        <connection id="0b3ba77f-ce22-451a-93ff-5264d3327833" name="Partner_Centeral">
+          <connectionUrls>
+            <connectionUrl url="sf:userType=COMMUNITIES;user=adam.mercer@provartesting.com.provardemo;environment=PROD_DEV;logonAsConnection=SDO;logonAsConnectionId=d6488777-c649-4f8c-b810-d5dd51d4a371;portal=SDO - Partner Central;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+        <connection id="36207587-a3a8-4e83-8ea1-a869e022b316" name="CPQ_Approver">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="76eedee4-8427-4969-bb02-dc1e4ff89eb6" url="sf:environment=PROD_DEV;apiLoginUrl=https://d0o000000te0ruau.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D0O000000tE0RUAU/0053X00000ErQVjQAN;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates\\Certificate\\CPQ_Certificate\\00D0O000000tE0R.jks;jwtUsername=cpqapprover@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=CPQ_JWT_App;jwtCertType=JKS"/>
+          </connectionUrls>
+        </connection>
+        <connection id="a8b2f05f-a03e-4025-838b-39844444ea47" name="FSL_org_">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="6cd2849c-0c71-415a-8811-2b287f0ede36" url="sf:environment=PROD_DEV;apiLoginUrl=https://provarfsl.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D4J000000EBqNUAW/0054J000000zCjqQAE;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/Certificate/FSL_org_Certificate/00D4J000000EBqN.jks;jwtUsername=fslprovar@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=PreSales;jwtCertType=JKS"/>
           </connectionUrls>
         </connection>
       </connections>
@@ -41,6 +66,8 @@
       <summary>Fixed 1920x1080</summary>
     </browserConfiguration>
   </browserConfigurations>
+  <antPath>ANT</antPath>
+  <testCyclePath>TestCycle</testCyclePath>
   <browserApplications>
     <browserApplication connectionTypes="sf" name="Salesforce1">
       <properties>

@@ -1,0 +1,26 @@
+name: Sync main branch to GitLab
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:   # manual trigger button
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Push main to GitLab
+        run: |
+          git remote add gitlab https://oauth2:${{ secrets.GITLAB_TOKEN }}@gitlab.com/presalesprovartesting-group/presalesprojectgitlab.git
+          git branch -M main
+          git push gitlab main --force
+

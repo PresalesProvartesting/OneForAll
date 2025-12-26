@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase guid="dc1e0f01-f17c-4e00-a2b6-b14719deecd9">
+<testCase guid="99cc908a-84d2-4a26-aa50-de30b1106043">
   <summary/>
   <steps>
-    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="3d6f7adb-f46e-4fc1-b01d-a3442ae4a543" name="ApexConnect" testItemId="1" title="Salesforce Connect: CPQ_New (Test)">
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="53fab41a-a3f4-4d28-9842-e0f5b86044dd" name="ApexConnect" testItemId="1" title="Salesforce Connect: CPQ_New (Test)">
       <arguments>
         <argument id="connectionName">
           <value class="value" valueClass="string">CPQ_org</value>
@@ -46,7 +46,7 @@
         <argument id="webBrowser"/>
       </arguments>
     </apiCall>
-    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="1c382e5e-fda4-47f4-a802-869d7023e9f0" name="UiWithScreen" testItemId="7" title="On SF Quote View screen">
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="f8c268a0-5f4e-423e-9d3c-86e290d772ea" name="UiWithScreen" testItemId="7" title="On SF Quote View screen">
       <arguments>
         <argument id="uiConnectionName">
           <value class="value" valueClass="string">CPQ_New</value>
@@ -80,7 +80,7 @@
       <clauses>
         <clause name="substeps" testItemId="8">
           <steps>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="bd02e04f-cd01-49e0-9d08-29564174029b" name="UiDoAction" testItemId="9" title="Click the Edit Lines button">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="91f14494-f9d5-4669-a8ea-fc6d7705e31f" name="UiDoAction" testItemId="9" title="Click the Edit Lines button">
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:locator?name=SBQQ__EditLines&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DSBQQ__Quote__c%26action%3DSBQQ__EditLines"/>
@@ -146,7 +146,7 @@
         </apiParam>
       </generatedParameters>
     </apiCall>
-    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="cedf2fa0-549f-4c9e-935c-b316677e6e63" name="UiWithScreen" testItemId="18" title="On SF SBQQ__sb page with pageobject Edit Quote">
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="fa57d0b2-56da-4da6-9c5c-df9e871f9503" name="UiWithScreen" testItemId="18" title="On SF SBQQ__sb page with pageobject Edit Quote">
       <arguments>
         <argument id="uiConnectionName">
           <value class="value" valueClass="string">CPQ_New</value>
@@ -183,7 +183,7 @@
       <clauses>
         <clause name="substeps" testItemId="19">
           <steps>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithRow" guid="9a7d53dc-84eb-42d3-8217-6b6ea6de7ebc" name="UiWithRow" testItemId="20" title="With Group 1 Lines rows {sBQQProductCodeC = &quot;APPLIANCE&quot;}">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithRow" guid="36de56ba-caa7-4eb4-aab8-2b8298ded96d" name="UiWithRow" testItemId="20" title="With Group 1 Lines rows {sBQQProductCodeC = &quot;APPLIANCE&quot;}">
               <arguments>
                 <argument id="uiConnectionName">
                   <value class="value" valueClass="string">CPQ_New</value>
@@ -222,7 +222,7 @@
               <clauses>
                 <clause name="substeps" testItemId="21">
                   <steps>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="6155c618-5574-4f6a-8cc2-3ca8d1ba1bfe" name="UiDoAction" testItemId="22" title="Check the Checkboxcontainer field">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="4acc7dfe-b65f-4f9c-b5c8-83cc3722a9a1" name="UiDoAction" testItemId="22" title="Check the Checkboxcontainer field">
                       <arguments>
                         <argument id="locator">
                           <value class="uiLocator" uri="ui:locator?name=checkboxcontainer"/>

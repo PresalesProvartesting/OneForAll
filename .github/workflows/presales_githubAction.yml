@@ -22,7 +22,7 @@ jobs:
          PROVAR_HOME: ${{ github.workspace }}/ProvarHome
          TEST_PROJECT: ./Provar_Demo_Project
          RESULT_DIRECTORY: ./Provar_Demo_Project/ANT/Results
-         BUILD_FILE: ./Provar_Demo_Project/ANT/build.xml/
+         BUILD_FILE: ./Provar_Demo_Project/ANT/build_GitHubActions.xml/
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:

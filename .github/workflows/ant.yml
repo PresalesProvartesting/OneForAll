@@ -1,9 +1,9 @@
 name: Sync main branch to GitLab
 
 on:
-  push:
-    branches:
-      - main
+#  push:
+#    branches:
+#      - main
 
   workflow_dispatch:   # manual trigger button
 

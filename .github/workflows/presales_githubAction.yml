@@ -53,6 +53,7 @@ jobs:
           echo $PROVAR_HOME
           ls ProvarHome
            pwd
+           echo "xvfb-run ant -f $BUILD_FILE -Dprovar.home=$PROVAR_HOME"
            xvfb-run ant -f $BUILD_FILE -Dprovar.home=$PROVAR_HOME
            
       # Generate Junit report

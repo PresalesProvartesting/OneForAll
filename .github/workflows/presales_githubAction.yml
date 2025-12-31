@@ -1,0 +1,71 @@
+# This is a basic workflow to help you get started with Actions
+
+name: PreSales_PROVAR_GitHubActions
+
+# Controls when the action will run. 
+on:
+ 
+  # Triggers the workflow on push or pull request events but only for the master branch
+#  push:
+#    branches: [ master ]
+  # To re-run job from github action
+  workflow_dispatch:
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Define the container imag3
+    env:
+         metadatafile: ${{ github.workspace }}/ProvarHome
+         PROVAR_HOME: /__w/Provar_Demo_Project/Provar_Demo_Project/ProvarHome
+         TEST_PROJECT: ./Provar_Demo_Project
+         RESULT_DIRECTORY: ./Provar_Demo_Project/ANT/Results
+         BUILD_FILE: ./Provar_Demo_Project/ANT/build.xml/
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+    # Cache dependencies to speed up workflow
+    #  - name: Cache Provar dependencies
+    #    uses: actions/cache@v2
+    #    with:
+    #      path: ProvarHome
+    #      key: ${{ runner.os }}-build-${{ hashFiles('**/Provar_ANT_latest.zip') }} 
+
+       
+
+          
+      # Runs a single command using the runners shell
+      - name: Run Test execution
+        continue-on-error: true
+        run: |
+          mkdir $GITHUB_WORKSPACE/ProvarHome
+          curl -O https://download.provartesting.com/latest/Provar_ANT_latest.zip
+          unzip -o Provar_ANT_latest.zip -d ProvarHome
+          rm Provar_ANT_latest.zip
+          sudo apt-get update && sudo apt-get upgrade       
+          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -        
+          sudo echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" >>sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get -y install google-chrome-stable
+          echo $PROVAR_HOME
+          ls ProvarHome
+           pwd
+           xvfb-run ant -f $BUILD_FILE -Dprovar.home=$PROVAR_HOME
+           
+      # Generate Junit report
+      - name: Publish JUnit Test Results
+        uses:  mikepenz/action-junit-report@v2
+        if: always()
+        with:
+          report_paths: '${{ github.workspace }}/ANT/Results/JUnit.xml'
+                     
+        #Attach the html and junit report
+      - name: Attach the report
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: Provar Testexecution Result
+          path: '${{ github.workspace }}/GithubActionsUseCases/ANT/Results/*'

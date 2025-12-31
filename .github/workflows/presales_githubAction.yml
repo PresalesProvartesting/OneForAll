@@ -23,6 +23,7 @@ jobs:
          TEST_PROJECT: ./Provar_Demo_Project
          RESULT_DIRECTORY: ./Provar_Demo_Project/ANT/Results
          BUILD_FILE: ./Provar_Demo_Project/ANT/build_GitHubActions.xml/
+         License_Path: ./Provar_Demo_Project/data/License
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -56,8 +57,8 @@ jobs:
           echo $PROVAR_HOME
           ls ProvarHome
            pwd
-           echo "xvfb-run ant -f $BUILD_FILE -Dprovar.home=$PROVAR_HOME -Dtestproject.home=$TEST_PROJECT"
-           xvfb-run ant -f $BUILD_FILE -Dprovar.home=$PROVAR_HOME -Dtestproject.home=$TEST_PROJECT
+           echo "xvfb-run ant -f $BUILD_FILE -Dprovar.home=$PROVAR_HOME -Dtestproject.home=$TEST_PROJECT -DlicensePath=&License_Path"
+           xvfb-run ant -f $BUILD_FILE -Dprovar.home=$PROVAR_HOME -Dtestproject.home=$TEST_PROJECT -DlicensePath=&License_Path
            
       # Generate Junit report
       - name: Publish JUnit Test Results

@@ -57,8 +57,8 @@ jobs:
           echo $PROVAR_HOME
           ls ProvarHome
            pwd
-           echo "xvfb-run ant -f $BUILD_FILE -Dprovar.home=$PROVAR_HOME -Dtestproject.home=$TEST_PROJECT -DlicensePath=&License_Path"
-           xvfb-run ant -f $BUILD_FILE -Dprovar.home=$PROVAR_HOME -Dtestproject.home=$TEST_PROJECT -DlicensePath=&License_Path
+           echo "xvfb-run ant -f $BUILD_FILE -Dprovar.home=$PROVAR_HOME -Dtestproject.home=$TEST_PROJECT -DlicensePath=$License_Path"
+           xvfb-run ant -f $BUILD_FILE -Dprovar.home=$PROVAR_HOME -Dtestproject.home=$TEST_PROJECT -DlicensePath=$License_Path
            
       # Generate Junit report
       - name: Publish JUnit Test Results

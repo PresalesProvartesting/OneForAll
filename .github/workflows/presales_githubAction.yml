@@ -19,7 +19,7 @@ jobs:
     # Define the container imag3
     env:
          metadatafile: ${{ github.workspace }}/ProvarHome
-         PROVAR_HOME: /home/runner/work/Provar_Demo_Project/Provar_Demo_Project/ProvarHome/
+         PROVAR_HOME: ${{ github.workspace }}/ProvarHome
          TEST_PROJECT: ./Provar_Demo_Project
          RESULT_DIRECTORY: ./Provar_Demo_Project/ANT/Results
          BUILD_FILE: ./Provar_Demo_Project/ANT/build.xml/

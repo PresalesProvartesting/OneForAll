@@ -13,5 +13,9 @@ import com.provar.core.testapi.annotations.*;
      , connection="CPQ_org"
      )             
 public class MyPageObject {
+
+	@LinkType()
+	@FindBy(xpath = "//div[@data-region-name='content']//a")
+	public WebElement _00001409;
 			
 }

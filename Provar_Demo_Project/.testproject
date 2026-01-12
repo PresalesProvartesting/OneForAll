@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <testProject guid="739a94c4-4f86-4532-9ad0-7dac4e0d2f00" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop">
-  <title>/Provar_Demo_Project/.testproject</title>
+  <title>/Provar_Demo_Project1/.testproject</title>
   <configPath>config</configPath>
   <testsPath>tests</testsPath>
   <testPlansPath>plans</testPlansPath>
@@ -46,6 +46,69 @@
             <connectionUrl secureStorageNodeId="6cd2849c-0c71-415a-8811-2b287f0ede36" url="sf:environment=PROD_DEV;apiLoginUrl=https://provarfsl.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D4J000000EBqNUAW/0054J000000zCjqQAE;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/Certificate/FSL_org_Certificate/00D4J000000EBqN.jks;jwtUsername=fslprovar@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=PreSales;jwtCertType=JKS"/>
           </connectionUrls>
         </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="google">
+      <connections>
+        <connection id="7a96d96e-f6c2-4cde-a3a2-9f3d63fb364a" name="ProvarDemoGoogle">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="fac700bb-81da-4f7c-bf5a-6a1aad11b4ed" url="google:user=se@provartesting.com;accessToken={accessToken};refreshToken={refreshToken};expiry=1767803898000"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="webservice">
+      <connections>
+        <connection id="c0e317d0-a103-4006-b396-be5bd04bdfdf" name="REST_Salesforce_OAuth">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="e9b0d73d-3f58-4cfe-971f-7543e9562843" url="restservice:url=https://ap16.salesforce.com;user=demo@provartesting.com;password={password};clientId=3MVG9TSaZ8P6zP1pIkBCL8RNYh6Sea.GQQSKNGGio7w34Mbl9FKZ9fneG40emCT0TW5jiv1W3WWQ2S2QYBkMy;clientSecret={clientSecret};authorizeUrl=https://login.salesforce.com/services/oauth2/token;authenticationType=OAUTH_PASSWORD">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="2e024a6e-a6cc-4cd7-857b-078cd3983673" name="postman">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="68dc5740-fb23-426e-b17c-feb4e71beb0e" url="restservice:url=http://postman-echo.com/basic-auth;user=postman;password={password};authenticationType=BASIC_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="9b686c32-8584-4a59-bb7f-7f1755b69322" name="BasicAuthentication">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="5739d2e5-befe-4371-8062-7a35ea51dff2" url="restservice:url=https://restful-booker.herokuapp.com;user=admin;password={password};authenticationType=BASIC_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="077c7b19-363e-4ebf-b992-ff4a8c73095d" name="ApiKeyTestObject">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="64d02787-4f36-47ed-8f5f-655533b1303a" url="restservice:url=https://gorest.co.in;apiKey={apiKey};authenticationType=API_KEY">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="4b836097-8829-4423-814a-9a84d72f2c2a" name="NoAuth">
+          <connectionUrls>
+            <connectionUrl url="restservice:url=//jsonplaceholder.typicode.com;authenticationType=NO_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="281cdb50-1339-4015-8217-24b21795e058" name="salesforceprod_oauth2">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="0bbaea21-b5dc-4f68-ba05-5f7c361104c1" url="restservice:url=https://eu7.salesforce.com/;user=regressionorg@provartesting.com;password={password};clientId=3MVG9WtWSKUDG.x6ZqtVEKaAA4iLlRuc2ryNhN8I7QHS7OeG0Rvkp9CrplQqb99C8iIwXA.SZn_37iMWbo.Xa;clientSecret={clientSecret};authorizeUrl=//login.salesforce.com/services/oauth2/token;authenticationType=OAUTH_PASSWORD">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="59911a4a-ae8c-48da-8262-c6bc35997c45" name="Rest_BasicAuth_CustomHeader">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="b0bc1beb-1935-4e60-848e-c8bb99b70373" url="restservice:url=https://restful-booker.herokuapp.com;user=admin;password={password};authenticationType=BASIC_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>        
+        
       </connections>
     </connectionClass>
   </connectionClasses>

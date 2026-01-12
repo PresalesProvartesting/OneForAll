@@ -22,5 +22,6 @@ Require-Bundle: com.provar.core.testapi,
  org.seleniumhq.selenium.selenium-manager,
  org.seleniumhq.selenium.selenium-os,
  org.seleniumhq.selenium.selenium-java,
+ com.provar.core.webcomponent
 Automatic-Module-Name: Provar_Demo_Project
 Bundle-RequiredExecutionEnvironment: JavaSE-21

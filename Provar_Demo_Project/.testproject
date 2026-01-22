@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <testProject guid="739a94c4-4f86-4532-9ad0-7dac4e0d2f00" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop">
-  <title>/Provar_Demo_Project1/.testproject</title>
+  <title>/Provar_Demo_Project/.testproject</title>
   <configPath>config</configPath>
   <testsPath>tests</testsPath>
   <testPlansPath>plans</testPlansPath>
@@ -107,8 +107,16 @@
               <customHeaders/>
             </connectionUrl>
           </connectionUrls>
-        </connection>        
-        
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="msexc">
+      <connections>
+        <connection id="eda46bcd-71b1-40f8-a341-3ea14616a4d3" name="Outlook_Connection">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="83cc860f-ca2e-4928-b6c8-1efdce061d72" url="exchange:accessToken={accessToken};clientSecret={clientSecret};tenant=e7e1fdad-d788-4b1e-bd12-17b97bc0b9d9;clientId=604ef9c7-ac38-45bd-87c8-eedaf6be4258;serverType=EWS;authenticationType=OAUTH;user=provaradmin@provartesting.onmicrosoft.com;callbackUrl=https://oauth.pstmn.io/v1/browser-callback;refreshToken={refreshToken};hostName=outlook.office365.com"/>
+          </connectionUrls>
+        </connection>
       </connections>
     </connectionClass>
   </connectionClasses>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="8d56dd7a-27d9-42bb-8189-d7b716968793">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="16e3ef54-26c8-4262-954e-57144f006e7c" name="SetValues" testItemId="18" title="Set Values: Email_Subject">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">Email_Subject</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">Test Mail</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="bf219c78-2e89-440e-ac1d-22e872a068fd" name="SetValues" testItemId="19" title="Set Values: Email_Body">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">Email_Body</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">This Email is for test.</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="64e27752-6c61-44ef-95c6-3776db4bdc7b" name="SetValues" testItemId="20" title="Set Values: Signature">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">Signature</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">ProvarTesting</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.messaging.Subscribe" guid="9ffab59a-5810-4160-b55e-52bbeec71a87" name="Subscribe" testItemId="2" title="Subscribe: ProvarDemoGoogle">
+      <arguments>
+        <argument id="sourceConnectionName">
+          <value class="value" valueClass="string">ProvarDemoGoogle</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">7a96d96e-f6c2-4cde-a3a2-9f3d63fb364a</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Gmail</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="folder">
+          <value class="value" valueClass="string">INBOX</value>
+        </argument>
+        <argument id="from">
+          <value class="value" valueClass="string">se@provartesting.com</value>
+        </argument>
+        <argument id="subject">
+          <value class="value" valueClass="string">Test Mail</value>
+        </argument>
+        <argument id="parseAttachment"/>
+      </arguments>
+      <generatedParameters>
+        <param group="source" linkedToUrl="connectionParam:sourceConnectionName" name="folder" title="Folder">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="source" linkedToUrl="connectionParam:sourceConnectionName" name="from" title="From">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="source" linkedToUrl="connectionParam:sourceConnectionName" name="subject" title="Subject">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="source" linkedToUrl="connectionParam:sourceConnectionName" name="parseAttachment" title="Read Email Attachments">
+          <type>
+            <booleanType/>
+          </type>
+        </param>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.messaging.SendMessage" guid="d4ca901d-485b-4b91-84e5-a8cd80997ea3" name="SendMessage" testItemId="3" title="Send Message: ProvarDemoGoogle">
+      <arguments>
+        <argument id="destinationConnectionName">
+          <value class="value" valueClass="string">ProvarDemoGoogle</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">7a96d96e-f6c2-4cde-a3a2-9f3d63fb364a</value>
+        </argument>
+        <argument id="body">
+          <value class="variable">
+            <path element="Email_Body"/>
+          </value>
+        </argument>
+        <argument id="payloadFormat">
+          <value class="value" valueClass="string">Auto</value>
+        </argument>
+        <argument id="attachments">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+        <argument id="to">
+          <value class="value" valueClass="string">se@provartesting.com</value>
+        </argument>
+        <argument id="cc"/>
+        <argument id="bcc"/>
+        <argument id="subject">
+          <value class="variable">
+            <path element="Email_Subject"/>
+          </value>
+        </argument>
+        <argument id="signature">
+          <value class="variable">
+            <path element="Signature"/>
+          </value>
+        </argument>
+      </arguments>
+      <generatedParameters>
+        <param group="destination" linkedToUrl="connectionParam:destinationConnectionName" mandatory="true" name="to" title="To">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="destination" linkedToUrl="connectionParam:destinationConnectionName" name="cc" title="CC">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="destination" linkedToUrl="connectionParam:destinationConnectionName" name="bcc" title="BCC">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="payload" linkedToUrl="connectionParam:destinationConnectionName" name="subject" title="Subject">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="payload" linkedToUrl="connectionParam:destinationConnectionName" name="signature" title="Signature">
+          <type>
+            <textType/>
+          </type>
+        </param>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.WaitFor" guid="9844bf5e-b583-46b2-a3d4-2846a6f078b5" name="WaitFor" testItemId="4" title="Wait For: {Gmail.messageCount &gt; 0}=&gt;{30}">
+      <arguments>
+        <argument id="condition">
+          <value class="gt">
+            <lhs class="variable">
+              <path element="Gmail"/>
+              <path element="messageCount"/>
+            </lhs>
+            <rhs class="value" valueClass="decimal">0</rhs>
+          </value>
+        </argument>
+        <argument id="testAtStart"/>
+        <argument id="maxIterations">
+          <value class="value" valueClass="decimal">5</value>
+        </argument>
+        <argument id="sleepSecs">
+          <value class="value" valueClass="decimal">30</value>
+        </argument>
+        <argument id="continueOnFailure"/>
+      </arguments>
+      <clauses>
+        <clause name="substeps" testItemId="5"/>
+      </clauses>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.AssertValues" guid="db0305af-bd24-464d-8d01-b5a1ceb08afb" name="AssertValues" testItemId="17" title="Assert: {Email_Subject} EqualTo {Gmail.messages.subject}">
+      <arguments>
+        <argument id="expectedValue">
+          <value class="variable">
+            <path element="Email_Subject"/>
+          </value>
+        </argument>
+        <argument id="actualValue">
+          <value class="variable">
+            <path element="Gmail"/>
+            <path element="messages"/>
+            <path element="subject"/>
+          </value>
+        </argument>
+        <argument id="comparisonType">
+          <value class="value" valueClass="string">EqualTo</value>
+        </argument>
+        <argument id="caseSensitive">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="numeric">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="retainDecimals">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="nullGreater">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="matchMultiLine">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="matchDotAll">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="failureMessage">
+          <value class="value" valueClass="string">Subject Not matched</value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

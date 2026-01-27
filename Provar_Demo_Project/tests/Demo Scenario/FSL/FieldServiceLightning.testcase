@@ -8,7 +8,7 @@
       </associations>
       <arguments>
         <argument id="connectionName">
-          <value class="value" valueClass="string">FSL_org_</value>
+          <value class="value" valueClass="string">FSL</value>
         </argument>
         <argument id="resultName">
           <value class="value" valueClass="string">FSL</value>
@@ -45,7 +45,7 @@
         </argument>
         <argument id="webBrowser"/>
         <argument id="connectionId">
-          <value class="value" valueClass="id">bcb0e8c5-4b3c-4b25-ba5c-837089df3195</value>
+          <value class="value" valueClass="id">a8b2f05f-a03e-4025-838b-39844444ea47</value>
         </argument>
       </arguments>
     </apiCall>

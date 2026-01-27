@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="f683e587-924c-4abf-8a09-53cfd1970c85" id="5">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="890b6889-6621-47c2-a182-464464ee64e2" name="SetValues" testItemId="3" title="Set Values: var.Company">
+      <tags/>
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">var.AccountName</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="compound">
+                  <parts>
+                    <value valueClass="string">TestAccount</value>
+                    <funcCall id="UniqueId">
+                      <argument id="length">
+                        <value class="value" valueClass="decimal">3</value>
+                      </argument>
+                    </funcCall>
+                  </parts>
+                </value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">var.Phone</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="funcCall" id="UniqueId">
+                  <argument id="length">
+                    <value class="value" valueClass="decimal">10</value>
+                  </argument>
+                  <argument id="format">
+                    <value class="variable">
+                      <path element="NUMERIC"/>
+                    </value>
+                  </argument>
+                </value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">var.Company</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="compound">
+                  <parts>
+                    <value valueClass="string">TestCompany</value>
+                    <funcCall id="UniqueId">
+                      <argument id="length">
+                        <value class="value" valueClass="decimal">3</value>
+                      </argument>
+                    </funcCall>
+                  </parts>
+                </value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="5f2429d2-66e5-434d-8155-a440f4f352f9" name="StepGroup" testItemId="4" title="Read Data">
+      <arguments>
+        <argument id="description">
+          <value class="value" valueClass="string">Read Data</value>
+        </argument>
+      </arguments>
+      <parameterValueSources>
+        <parameterValueSource variableName="WriteReplace" variableScope="Test">
+          <cacheToken>C:/Users/ashish.kushwaha/Provar/Git_provar_demo_project/Provar_Demo_Project/templates/ExcelFunctionality.xlsx;1769509704363</cacheToken>
+          <cachedParameters>
+            <apiParam name="AccountName"/>
+            <apiParam name="Phone"/>
+            <apiParam name="Company"/>
+          </cachedParameters>
+          <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
+            <workbookPath class="value" valueClass="string">templates/ExcelFunctionality.xlsx</workbookPath>
+            <worksheetName class="value" valueClass="string">WriteReplace</worksheetName>
+            <valuesRange class="value"/>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
+      <clauses>
+        <clause name="hidden" testItemId="5"/>
+      </clauses>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.io.Write" guid="c03cd979-9314-4438-b234-b4d49db8b3ad" name="Write" testItemId="2" title="Write: {var}=&gt;templates/ExcelFunctionality.xlsx">
+      <arguments>
+        <argument id="data">
+          <value class="variable">
+            <path element="var"/>
+          </value>
+        </argument>
+        <argument id="dataUrl">
+          <value class="excelTarget" sheetWriteMode="OVERWRITE">
+            <workbookPath class="value" valueClass="string">templates/ExcelFunctionality.xlsx</workbookPath>
+            <worksheetName class="value" valueClass="string">WriteReplace</worksheetName>
+          </value>
+        </argument>
+        <argument id="targetDescription">
+          <value class="value" valueClass="string">templates/ExcelFunctionality.xlsx</value>
+        </argument>
+      </arguments>
+      <generatedParameters/>
+    </apiCall>
+  </steps>
+</testCase>

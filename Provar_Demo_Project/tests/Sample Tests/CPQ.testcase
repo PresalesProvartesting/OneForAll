@@ -2,16 +2,16 @@
 <testCase guid="99cc908a-84d2-4a26-aa50-de30b1106043">
   <summary/>
   <steps>
-    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="4fe889db-7839-4ce9-b38f-e6191149c966" name="ApexConnect" testItemId="1" title="Salesforce Connect: CPQ_New (Test)">
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="4fe889db-7839-4ce9-b38f-e6191149c966" name="ApexConnect" testItemId="1" title="Salesforce Connect: CPQ (Test)">
       <arguments>
         <argument id="connectionName">
-          <value class="value" valueClass="string">CPQ_org</value>
+          <value class="value" valueClass="string">CPQ</value>
         </argument>
         <argument id="connectionId">
           <value class="value" valueClass="id">4ec97b0b-0b1d-4310-9672-e28cab4b5837</value>
         </argument>
         <argument id="resultName">
-          <value class="value" valueClass="string">CPQ_New</value>
+          <value class="value" valueClass="string">CPQ</value>
         </argument>
         <argument id="resultScope">
           <value class="value" valueClass="string">Test</value>
@@ -49,7 +49,7 @@
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="51b0c901-43ba-4886-be49-cd36a7a08a4e" name="UiWithScreen" testItemId="7" title="On SF Quote View screen">
       <arguments>
         <argument id="uiConnectionName">
-          <value class="value" valueClass="string">CPQ_New</value>
+          <value class="value" valueClass="string">CPQ</value>
         </argument>
         <argument id="target">
           <value class="uiTarget" uri="sf:ui:target?object=SBQQ__Quote__c&amp;action=View&amp;noOverride=true"/>
@@ -149,7 +149,7 @@
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="515c7ecf-1042-44fc-bc0b-871b01c0ed0e" name="UiWithScreen" testItemId="18" title="On SF SBQQ__sb page with pageobject Edit Quote">
       <arguments>
         <argument id="uiConnectionName">
-          <value class="value" valueClass="string">CPQ_New</value>
+          <value class="value" valueClass="string">CPQ</value>
         </argument>
         <argument id="target">
           <value class="uiTarget" uri="sf:ui:target?pageObject=pageobjects.EditQuote&amp;page=SBQQ__sb"/>

@@ -107,16 +107,16 @@
                 </argument>
               </arguments>
             </apiCall>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="8592bffe-85fd-4729-b483-351d2f684755" name="ApexConnect" testItemId="282" title="Salesforce Connect: CPQ_New (Test)">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="8592bffe-85fd-4729-b483-351d2f684755" name="ApexConnect" testItemId="282" title="Salesforce Connect: CPQ (Test)">
               <associations>
                 <association assocationType="TM.TEST_STEP" connectionId="5d6397b0-3b89-4406-a098-361b5a6e5eaf" entityKey="a0b8d000007H2ADAA0"/>
               </associations>
               <arguments>
                 <argument id="connectionName">
-                  <value class="value" valueClass="string">CPQ_org</value>
+                  <value class="value" valueClass="string">CPQ</value>
                 </argument>
                 <argument id="resultName">
-                  <value class="value" valueClass="string">CPQ_New</value>
+                  <value class="value" valueClass="string">CPQ</value>
                 </argument>
                 <argument id="resultScope">
                   <value class="value" valueClass="string">Test</value>
@@ -169,7 +169,7 @@
                   <value class="value" valueClass="string">LeadId</value>
                 </argument>
                 <argument id="apexConnectionName">
-                  <value class="value" valueClass="string">CPQ_New</value>
+                  <value class="value" valueClass="string">CPQ</value>
                 </argument>
                 <argument id="assignmentRuleId"/>
                 <argument id="resultScope">
@@ -201,7 +201,7 @@
               </associations>
               <arguments>
                 <argument id="apexConnectionName">
-                  <value class="value" valueClass="string">CPQ_New</value>
+                  <value class="value" valueClass="string">CPQ</value>
                 </argument>
                 <argument id="leadId">
                   <value class="variable">
@@ -264,7 +264,7 @@
               </associations>
               <arguments>
                 <argument id="uiConnectionName">
-                  <value class="value" valueClass="string">CPQ_New</value>
+                  <value class="value" valueClass="string">CPQ</value>
                 </argument>
                 <argument id="target">
                   <value class="uiTarget" uri="sf:ui:target?object=Opportunity&amp;action=View&amp;noOverride=true"/>
@@ -370,7 +370,7 @@
               </associations>
               <arguments>
                 <argument id="uiConnectionName">
-                  <value class="value" valueClass="string">CPQ_New</value>
+                  <value class="value" valueClass="string">CPQ</value>
                 </argument>
                 <argument id="target">
                   <value class="uiTarget" uri="sf:ui:target?object=SBQQ__Quote__c&amp;action=New&amp;noOverride=true"/>
@@ -549,7 +549,7 @@
               </associations>
               <arguments>
                 <argument id="uiConnectionName">
-                  <value class="value" valueClass="string">CPQ_New</value>
+                  <value class="value" valueClass="string">CPQ</value>
                 </argument>
                 <argument id="target">
                   <value class="uiTarget" uri="sf:ui:target?object=SBQQ__Quote__c&amp;action=View&amp;noOverride=true"/>
@@ -670,7 +670,7 @@
               </associations>
               <arguments>
                 <argument id="uiConnectionName">
-                  <value class="value" valueClass="string">CPQ_New</value>
+                  <value class="value" valueClass="string">CPQ</value>
                 </argument>
                 <argument id="target">
                   <value class="uiTarget" uri="sf:ui:target?page=SBQQ__sb&amp;pageObject=pageobjects.EditQuote"/>
@@ -1069,7 +1069,7 @@
               </associations>
               <arguments>
                 <argument id="uiConnectionName">
-                  <value class="value" valueClass="string">CPQ_New</value>
+                  <value class="value" valueClass="string">CPQ</value>
                 </argument>
                 <argument id="target">
                   <value class="uiTarget" uri="sf:ui:target?page=SBQQ__sb&amp;pageObject=pageobjects.EditQuote"/>
@@ -1315,7 +1315,7 @@
               </associations>
               <arguments>
                 <argument id="uiConnectionName">
-                  <value class="value" valueClass="string">CPQ_New</value>
+                  <value class="value" valueClass="string">CPQ</value>
                 </argument>
                 <argument id="target">
                   <value class="uiTarget" uri="sf:ui:target?object=SBQQ__Quote__c&amp;action=View&amp;noOverride=true"/>
@@ -1420,7 +1420,7 @@
               </associations>
               <arguments>
                 <argument id="uiConnectionName">
-                  <value class="value" valueClass="string">CPQ_New</value>
+                  <value class="value" valueClass="string">CPQ</value>
                 </argument>
                 <argument id="target">
                   <value class="uiTarget" uri="sf:ui:target?object=SBQQ__Quote__c&amp;action=piSubmit"/>
@@ -1612,7 +1612,7 @@
                 </argument>
                 <argument id="webBrowser"/>
                 <argument id="connectionId">
-                  <value class="value" valueClass="id">fb8ccddf-2cf1-474a-a26c-bea04ff573c9</value>
+                  <value class="value" valueClass="id">36207587-a3a8-4e83-8ea1-a869e022b316</value>
                 </argument>
               </arguments>
             </apiCall>
@@ -1873,7 +1873,7 @@
           <value class="value" valueClass="string">OpportunityUpdated</value>
         </argument>
         <argument id="apexConnectionName">
-          <value class="value" valueClass="string">CPQ_New</value>
+          <value class="value" valueClass="string">CPQ</value>
         </argument>
         <argument id="objectId">
           <value class="variable">
@@ -1914,7 +1914,7 @@
       </associations>
       <arguments>
         <argument id="uiConnectionName">
-          <value class="value" valueClass="string">CPQ_New</value>
+          <value class="value" valueClass="string">CPQ</value>
         </argument>
         <argument id="target">
           <value class="uiTarget" uri="sf:ui:target?object=Opportunity&amp;action=View&amp;noOverride=true"/>

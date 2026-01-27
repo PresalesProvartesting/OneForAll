@@ -8,22 +8,26 @@
   <sourcePath>src</sourcePath>
   <secureStoragePath>.secrets</secureStoragePath>
   <browserDebugPort>0</browserDebugPort>
+  <environments>
+    <environment guid="8a4e0033-dd13-46f4-b762-d4c4d8268fa5" name="UAT"/>
+    <environment guid="a2868876-1fde-43b7-8f74-e6489b353010" name="QA"/>
+  </environments>
   <connectionClasses>
     <connectionClass name="sf">
       <connections>
-        <connection id="3830638e-35c0-4c58-a90c-093c049607fb" name="Spanish_org">
+        <connection id="3830638e-35c0-4c58-a90c-093c049607fb" name="Spanish">
           <connectionUrls>
             <connectionUrl secureStorageNodeId="7074eae6-ec43-455a-93ee-932d6cc02874" url="sf:environment=PROD_DEV;apiLoginUrl=https://d20000000m8sbeai.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D20000000m8SbEAI/00520000006jwLdAAI;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/Certificate/Spanish_org_Certificate/00D20000000m8Sb.jks;jwtUsername=language2@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=ProvarJWT;jwtCertType=JKS"/>
           </connectionUrls>
         </connection>
-        <connection id="4ec97b0b-0b1d-4310-9672-e28cab4b5837" name="CPQ_org">
+        <connection id="4ec97b0b-0b1d-4310-9672-e28cab4b5837" name="CPQ">
           <connectionUrls>
             <connectionUrl secureStorageNodeId="abd4e774-d3ad-45d7-8416-ebb45b65704d" url="sf:environment=PROD_DEV;apiLoginUrl=https://d0o000000te0ruau.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D0O000000tE0RUAU/0050O000005auzzQAA;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/Certificate/CPQ_Certificate/00D0O000000tE0R.jks;jwtUsername=cpq@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=CPQ_JWT_App;jwtCertType=JKS"/>
           </connectionUrls>
         </connection>
         <connection id="d6488777-c649-4f8c-b810-d5dd51d4a371" name="SDO">
           <connectionUrls>
-            <connectionUrl secureStorageNodeId="6458bb50-4bb3-4151-a36e-1e1e641688c5" url="sf:environment=PROD_DEV;apiLoginUrl=https://pr1752858432091.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00DKY00000DQfyj2AD/005KY000001tkmhYAA;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/Certificate/SDO_Certificate/00DKY00000DQfyj.jks;jwtUsername=aastha.jain@provartesting.com.provardemo;jwtPassword={jwtPassword};jwtCertAlias=ProvarJWT;jwtCertType=JKS"/>
+            <connectionUrl secureStorageNodeId="6458bb50-4bb3-4151-a36e-1e1e641688c5" url="sf:environment=PROD_DEV;apiLoginUrl=https://pr1752858432091.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00DKY00000DQfyj2AD/005KY000001tkmhYAA;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/Certificate/SDO_Certificate/00DKY00000DQfyj.jks;jwtUsername=demo@provartesting.com.provardemo;jwtPassword={jwtPassword};jwtCertAlias=ProvarJWT;jwtCertType=JKS"/>
           </connectionUrls>
         </connection>
         <connection id="1620a13e-f176-421f-9b1c-79635ea3dc0a" name="SDO_Partner_Central">
@@ -41,9 +45,21 @@
             <connectionUrl secureStorageNodeId="76eedee4-8427-4969-bb02-dc1e4ff89eb6" url="sf:environment=PROD_DEV;apiLoginUrl=https://d0o000000te0ruau.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D0O000000tE0RUAU/0053X00000ErQVjQAN;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates\\Certificate\\CPQ_Certificate\\00D0O000000tE0R.jks;jwtUsername=cpqapprover@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=CPQ_JWT_App;jwtCertType=JKS"/>
           </connectionUrls>
         </connection>
-        <connection id="a8b2f05f-a03e-4025-838b-39844444ea47" name="FSL_org_">
+        <connection id="a8b2f05f-a03e-4025-838b-39844444ea47" name="FSL">
           <connectionUrls>
             <connectionUrl secureStorageNodeId="6cd2849c-0c71-415a-8811-2b287f0ede36" url="sf:environment=PROD_DEV;apiLoginUrl=https://provarfsl.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D4J000000EBqNUAW/0054J000000zCjqQAE;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/Certificate/FSL_org_Certificate/00D4J000000EBqN.jks;jwtUsername=fslprovar@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=PreSales;jwtCertType=JKS"/>
+          </connectionUrls>
+        </connection>
+        <connection id="0339c9e0-a309-44ed-ba42-6525553f9001" name="Demo">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="59de89da-1d67-4c42-9227-ff3fd89db1d7" url="sf:environment=PROD_DEV;apiLoginUrl=https://provardemo.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D0N000000hpkBUAQ/0050N0000075LI9QAM;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/Certificate/Demo_Org/00D0N000000hpkB.jks;jwtUsername=demo@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=ProvarDemoProject;jwtCertType=JKS"/>
+            <connectionUrl envId="a2868876-1fde-43b7-8f74-e6489b353010" envName="QA" secureStorageNodeId="44ed8611-905d-4840-ab28-7ac24fe6370b" url="sf:user=demo@provartesting.com.qa;password={password};environment=SANDBOX;clientId={clientId};lightningMode=true"/>
+            <connectionUrl envName="UAT" secureStorageNodeId="79a6f129-5318-484c-ba7f-4569fc90150e" url="sf:user=demo@provartesting.com.uat;password={password};environment=PROD_DEV;userLoginUrl=https://provardemo.my.salesforce.com/;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+        <connection id="43d6dfe9-2333-4b0b-aa62-e61fed3da6ad" name="DemoOrgNonAdmin">
+          <connectionUrls>
+            <connectionUrl url="sf:user=nonadmin@provardemo.com;environment=PROD_DEV;logonAsConnection=Demo;logonAsConnectionId=0339c9e0-a309-44ed-ba42-6525553f9001;lightningMode=true"/>
           </connectionUrls>
         </connection>
       </connections>
@@ -59,20 +75,6 @@
     </connectionClass>
     <connectionClass name="webservice">
       <connections>
-        <connection id="c0e317d0-a103-4006-b396-be5bd04bdfdf" name="REST_Salesforce_OAuth">
-          <connectionUrls>
-            <connectionUrl secureStorageNodeId="e9b0d73d-3f58-4cfe-971f-7543e9562843" url="restservice:url=https://ap16.salesforce.com;user=demo@provartesting.com;password={password};clientId=3MVG9TSaZ8P6zP1pIkBCL8RNYh6Sea.GQQSKNGGio7w34Mbl9FKZ9fneG40emCT0TW5jiv1W3WWQ2S2QYBkMy;clientSecret={clientSecret};authorizeUrl=https://login.salesforce.com/services/oauth2/token;authenticationType=OAUTH_PASSWORD">
-              <customHeaders/>
-            </connectionUrl>
-          </connectionUrls>
-        </connection>
-        <connection id="2e024a6e-a6cc-4cd7-857b-078cd3983673" name="postman">
-          <connectionUrls>
-            <connectionUrl secureStorageNodeId="68dc5740-fb23-426e-b17c-feb4e71beb0e" url="restservice:url=http://postman-echo.com/basic-auth;user=postman;password={password};authenticationType=BASIC_AUTHENTICATION">
-              <customHeaders/>
-            </connectionUrl>
-          </connectionUrls>
-        </connection>
         <connection id="9b686c32-8584-4a59-bb7f-7f1755b69322" name="BasicAuthentication">
           <connectionUrls>
             <connectionUrl secureStorageNodeId="5739d2e5-befe-4371-8062-7a35ea51dff2" url="restservice:url=https://restful-booker.herokuapp.com;user=admin;password={password};authenticationType=BASIC_AUTHENTICATION">
@@ -83,27 +85,6 @@
         <connection id="077c7b19-363e-4ebf-b992-ff4a8c73095d" name="ApiKeyTestObject">
           <connectionUrls>
             <connectionUrl secureStorageNodeId="64d02787-4f36-47ed-8f5f-655533b1303a" url="restservice:url=https://gorest.co.in;apiKey={apiKey};authenticationType=API_KEY">
-              <customHeaders/>
-            </connectionUrl>
-          </connectionUrls>
-        </connection>
-        <connection id="4b836097-8829-4423-814a-9a84d72f2c2a" name="NoAuth">
-          <connectionUrls>
-            <connectionUrl url="restservice:url=//jsonplaceholder.typicode.com;authenticationType=NO_AUTHENTICATION">
-              <customHeaders/>
-            </connectionUrl>
-          </connectionUrls>
-        </connection>
-        <connection id="281cdb50-1339-4015-8217-24b21795e058" name="salesforceprod_oauth2">
-          <connectionUrls>
-            <connectionUrl secureStorageNodeId="0bbaea21-b5dc-4f68-ba05-5f7c361104c1" url="restservice:url=https://eu7.salesforce.com/;user=regressionorg@provartesting.com;password={password};clientId=3MVG9WtWSKUDG.x6ZqtVEKaAA4iLlRuc2ryNhN8I7QHS7OeG0Rvkp9CrplQqb99C8iIwXA.SZn_37iMWbo.Xa;clientSecret={clientSecret};authorizeUrl=//login.salesforce.com/services/oauth2/token;authenticationType=OAUTH_PASSWORD">
-              <customHeaders/>
-            </connectionUrl>
-          </connectionUrls>
-        </connection>
-        <connection id="59911a4a-ae8c-48da-8262-c6bc35997c45" name="Rest_BasicAuth_CustomHeader">
-          <connectionUrls>
-            <connectionUrl secureStorageNodeId="b0bc1beb-1935-4e60-848e-c8bb99b70373" url="restservice:url=https://restful-booker.herokuapp.com;user=admin;password={password};authenticationType=BASIC_AUTHENTICATION">
               <customHeaders/>
             </connectionUrl>
           </connectionUrls>

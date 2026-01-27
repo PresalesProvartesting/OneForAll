@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="9c609230-1b1b-4f21-9974-87c7eaf11935" id="0">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="20d8528d-4ab0-4c71-8147-16c2503963fa" name="StepGroup" testItemId="4" title="Read Data">
+      <arguments>
+        <argument id="description">
+          <value class="value" valueClass="string">Read Data</value>
+        </argument>
+      </arguments>
+      <parameterValueSources>
+        <parameterValueSource variableName="Write" variableScope="Test">
+          <cacheToken>C:/Users/ashish.kushwaha/Provar/Git_provar_demo_project/Provar_Demo_Project/templates/ExcelFunctionality.xlsx;1769509704363</cacheToken>
+          <cachedParameters>
+            <apiParam name="AccountName"/>
+            <apiParam name="Phone"/>
+            <apiParam name="Company"/>
+          </cachedParameters>
+          <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
+            <workbookPath class="value" valueClass="string">templates/ExcelFunctionality.xlsx</workbookPath>
+            <worksheetName class="value" valueClass="string">Write</worksheetName>
+            <valuesRange class="value"/>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
+      <clauses>
+        <clause name="hidden" testItemId="5"/>
+      </clauses>
+    </apiCall>
+  </steps>
+</testCase>

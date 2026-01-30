@@ -89,6 +89,13 @@
             </connectionUrl>
           </connectionUrls>
         </connection>
+        <connection id="aaf66012-1dbf-47b3-b468-ce78d31dd5bd" name="RestAPI">
+          <connectionUrls>
+            <connectionUrl url="restservice:url=https://api.restful-api.dev;authenticationType=NO_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
       </connections>
     </connectionClass>
     <connectionClass name="msexc">
